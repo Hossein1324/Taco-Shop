@@ -44,6 +44,7 @@ input, button, textarea {
 
     /* borders */
     --borders: 1px solid var(--border);
+    --border-raius: 15px;
     /* standardpadding */
     --padding-tb: 0.25em;
     --padding-side: 2.5%;
@@ -269,13 +270,49 @@ thead, tbody, tfoot, tr {
 }
 .menu__ch {
     grid-area: ch;
-    color: var(--hilight-color);
-    font-weight: bold;
 }
-.menu__cr, .menu__sf {
+.menu__cr, .menu__sf, .menu__ch, .menu__header {
     color: var(--hilight-color);
     font-weight: bold;
     height: 100%;
     display: grid;
     place-content: center;
+}
+
+.menu__header, .menu__item {
+    width: 100%;
+    padding: 1em;
+    border: medium ridge var(--border);
+} 
+.menu__item {
+    display: grid;
+    place-content: center;
+}
+thead th:first-child {
+    border-top-left-radius: var(--border-raius);
+}
+thead th:last-child {
+    border-top-right-radius: var(--border-raius);
+}
+tfoot td {
+    border-bottom-left-radius: var(--border-raius);
+}
+tfoot td {
+    border-bottom-right-radius: var(--border-raius);
+}
+
+@media screen and (min-width:567px) {
+    
+    .header__h1::before {
+        content: ' 🌮 ';
+    }
+    .header__h1::after {
+        content: ' 🌮 ';
+    }
+    .menu__header, 
+    .menu__ch,
+    .menu__sf,
+    .menu__cr {
+        font-size: 125%;
+    }
 }
