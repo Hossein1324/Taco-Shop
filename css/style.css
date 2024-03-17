@@ -259,6 +259,7 @@ a:active{
     border-radius: 15px;
     background-color: var(--hilight-color);
     color: var(--button-color);
+    font-weight: bold;
 }
 /* menu */
 thead, tbody, tfoot, tr {
