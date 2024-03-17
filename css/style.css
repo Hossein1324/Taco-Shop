@@ -26,21 +26,22 @@ input, button, textarea {
     --fs: clamp(1rem, 2.2vh, 1.5rem);
 
     /* colors */
-    --bgcolor: orange;
     --bgcolor-fade: rgb(252, 220, 160);
+    --bgcolor: orange;
     --bgimage: linear-gradient(to bottom, var(--bgcolor), var(--bgcolor-fade));
     --body-bgcolor: #fff;
-    --font-color:#000;
     --border:#333;
-    --hilight-color: rgb(51, 178,51);
-    --link-color:#000;
-    --link-hover: hsla(0, 0%, 0%, 0.6);
-    --link-active: orange;
+    --font-color:#000;
     --header-bgcolor:#000;
     --header-color: #fff;
-    --nav-bgcolor: #fff;
     --hero-bgcolor: rgba(51, 178, 51, 0.75);
     --hero-color: #fff;
+    --hilight-color: rgb(51, 178,51);
+    --link-active: orange;
+    --link-color:#000;
+    --link-hover: hsla(0, 0%, 0%, 0.6);
+    --nav-bgcolor: #fff;
+    --button-color:#fff;
 
     /* borders */
     --borders: 1px solid var(--border);
@@ -51,6 +52,23 @@ input, button, textarea {
 
     /* standard margin */
     --margin: clamp(1em, 2.5vh, 1.5em) 0;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bgcolor-fade: gray;
+        --bgcolor: #000;
+        --body-bgcolor:#333;
+        --border-color:whitesmoke;
+        --font-color: whitesmoke;
+        --header-color: whitesmoke;
+        --hero-color:#333;
+        --hilight-color: whitesmoke;
+        --link-active: rgb(252. 200, 103);
+        --link-color: whitesmoke;
+        --link-hover: orange;
+        --nav-bgcolor: rgb(20, 20, 20);
+        --button-color:#333;
+    }
 }
 
 /* utility classes */
@@ -240,7 +258,7 @@ a:active{
     padding: 0.5rem;
     border-radius: 15px;
     background-color: var(--hilight-color);
-    color: var(--header-color);
+    color: var(--button-color);
 }
 /* menu */
 thead, tbody, tfoot, tr {
@@ -302,7 +320,7 @@ tfoot td {
 }
 
 @media screen and (min-width:567px) {
-    
+
     .header__h1::before {
         content: ' 🌮 ';
     }
