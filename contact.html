@@ -8,70 +8,77 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-            <nav>
-                <ul>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+            <nav class="header__nav">
+                <ul class="header__ul">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                        <a href="/#menu">Menu</a>
                     </li>
                     <li>
-                        <a href="/#menu">Our Menu</a>
+                        <a href="hours.html">Hours</a>
                     </li>
                     <li>
-                        <a href="hours.html">Store Hours</a>
+                        <a href="about.html">About</a>
                     </li>
                 </ul>
             </nav>
+        
+    </header>
+    <section class="hero">
         <figure>
-            <img src="images/tacos_close_up_400x260.png" alt="A Little Taco Shop Taco" title="Tacos ready to eat" width="400" height="260">
+            <img src="images/tacos_close_up_400x260.png" alt="A Little Taco Shop Taco" title="Tacos ready to eat" width="1000" height="649">
             <figcaption>
                  Little Taco Shop Taco
             </figcaption>
         </figure>
-    </header>
-    <hr>
+    </section>
     <main>
-        <section>
-        <h2>Our Contact Form</h2>
-        <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-                <legend>Send Us A Massage</legend>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="your name" required>
+        <article class="main__artical">
+            <h2>Our Location</h2>
+            <address>
+                Iran,Mashhad,kossar 23 <br>
+                <br><br>
+                Phon: <a href="tel:+9888888">9888888</a>
+            </address>
+        </article>
+        
+        <article class="main__artical contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get" class="contact__form">
+            <fieldset class="contact__fieldset">
+                <legend class="offscreen">Send Us A Massage</legend>
+                <p class="contact__p">
+                    <label class="contact__label" for="name">Name:</label>
+                    <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
                 </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="your email" required>
+                <p class="contact__p">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
                 </p>
-                <p>
-                    <label for="massage">YourMassage:</label>
+                <p class="contact__p">
+                    <label class="contact__label" for="massage" >YourMassage:</label>
                     <br>
-                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Type your Massage here"></textarea>
+                    <textarea class="contact__textarea" name="massage" id="massage" cols="30" rows="10" placeholder="Type your Massage here"></textarea>
                 </p>
             </fieldset>
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
+            <button class="contact__button" type="submit">Send</button>
+            <button class="contact__button" type="reset">Reset</button>
 
         </form>
-    </section>
-    <section>
-        <h2>Our Location</h2>
-        <address>
-            Iran,Mashhad,kossar 23 <br>
-            <br><br>
-            Phon: <a href="tel:+9888888">9888888</a>
-        </address>
-    </section>
+    </article>
+   
 
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; the Little Taco Shop </p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; </span>
+            <span class="nowrap"> Little Taco Shop </span>
+                 </p>
     </footer>
     
 </body>
