@@ -91,6 +91,8 @@ html{
     background-color: var(--bgcolor);
     background-image: var(--bgimage);
 }
+
+
 body{
     background-color: var(--body-bgcolor);
     color: var(--font-color);
@@ -306,7 +308,9 @@ thead, tbody, tfoot, tr {
 .menu__item {
     display: grid;
     place-content: center;
+    
 }
+
 thead th:first-child {
     border-top-left-radius: var(--border-raius);
 }
