@@ -10,7 +10,7 @@ let price = 0;
 
 function  yourprice1() {
    const g = document.querySelector('.yourprice');
-   price = price+1.50;
+   price = price+2;
     g.innerHTML = `${price} $`
 }
 
