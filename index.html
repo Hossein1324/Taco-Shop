@@ -44,6 +44,11 @@
         <hr>
             <article id="menu" class="main__artical menu">
                 <h2 class="menu__h2">Our Menu</h2>
+                <div class="grid grid1x2">
+              <p class="Price" >your price:</p> 
+              <div class="yourprice">0</div>
+                </div>
+              <br>
                 <table class="menu__container">
                     <caption class="offscreen">Our Tacos</caption>
                     <thead>
@@ -58,30 +63,30 @@
                             <th class="menu__item menu__cr" scope="row" rowspan="3">
                                 Crunchy
                             </th>
-                            <td class=" menu__item">1</td>
-                            <td class=" menu__item">$1.50</td>
+                            <td class=" menu__item hover" onclick="yourprice1();">1</td>
+                            <td class=" menu__item ">$1.50</td>
                         </tr>
                         <tr>
-                            <td class=" menu__item">2</td>
-                            <td class=" menu__item">$2.50</td>
+                            <td class=" menu__item hover" onclick="yourprice2()">2</td>
+                            <td class=" menu__item ">$2.50</td>
                         </tr>
                         <tr>
-                            <td class=" menu__item">3</td>
-                            <td class=" menu__item">$3.25</td>
+                            <td class=" menu__item hover " onclick="yourprice3()">3 </td>
+                            <td class=" menu__item ">$3.25</td>
                         </tr>
                         <tr>
                             <th class="menu__item menu__sf" scope="row" rowspan="3">
                                 Soft
                             </th>
-                            <td class="menu__item">1</td>
+                            <td class="menu__item hover" onclick="yourprice1s()">1</td>
                             <td class="menu__item">$2.00</td>
                         </tr>
                         <tr>
-                            <td class="menu__item">2</td>
+                            <td class="menu__item hover" onclick="yourprice2s()">2</td>
                             <td class="menu__item">$3.50</td>
                         </tr>
                         <tr>
-                            <td class="menu__item">3</td>
+                            <td class="menu__item hover" onclick="yourprice3s()">3</td>
                             <td class="menu__item">$4.50</td>
                         </tr>
                     </tbody>

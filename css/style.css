@@ -203,6 +203,23 @@ a:active{
     text-align: center;
 }
 /* main */
+.grid {
+    display: grid;
+}
+.grid1x2 {
+    grid-template-columns: repeat(2, 0.18fr);
+}
+.yourprice {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--hilight-color);
+}
+.Price {
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    color: var(--hilight-color);
+}
 
 .main {
     padding: var(--padding-tb) var(--padding-side);
@@ -309,6 +326,11 @@ thead, tbody, tfoot, tr {
     display: grid;
     place-content: center;
     
+}
+.hover:hover {
+    background-color: var(--hilight-color);
+    color: whitesmoke;
+    transition: background-color 0.15s ;
 }
 
 thead th:first-child {
