@@ -1,28 +1,9 @@
-I learned the html and css projact from DaveGray YouTube whose YouTube link is below!
+<h1>Hi!, this is a small taco shop projact.</h1>
 
-# "HTML Project for Beginners"
+this projact can be used for small shops and restaurants.
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+in this projact information such as : prices, opening and closing time, addres,... is shown.
 
-This repository shares the completed code for the [YouTube Tutorial](https://youtu.be/T5PD8ofhiug).
+if you want to see the output of the projact, click on the link below!.
 
-**Your Challenge:** Utilize the knowledge you have gained from the [HTML for Beginners](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OlAwitnFUubtE93DO-l0vu) tutorial series to build a website for The Little Taco Shop.
-
-**Directions:**
-
-- There are images of the 3 web pages you need to build in the examples folder. Use them as references for what you build.
-
-- You should name your files: index.html, hours.html, and contact.html
-
-- There is minimal CSS already available in css/styles.css. You need to link that file to your HTML files.
-
-- All images are provided in the img folder.
-
-- If you need to find taco emojis, try [Emojipedia](https://emojipedia.org/taco/).
-
-- A favicon is already included. You'll need to add it in the head section of each page.
-
-### Academic Honesty
-
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
-"# Taco-Shop"
+[link of the projact -->](https://taco-projact.netlify.app).
