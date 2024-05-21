@@ -206,8 +206,8 @@ a:active{
 .grid {
     display: grid;
 }
-.grid1x2 {
-    grid-template-columns: repeat(2, 0.18fr);
+.grid1x3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 .yourprice {
     font-size: 1.3rem;
@@ -219,6 +219,28 @@ a:active{
     font-weight: 800;
 
     color: var(--hilight-color);
+}
+.reset{
+    background-color: var(--hilight-color);
+    color: whitesmoke;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.reset:hover {
+    background-color: rgb(44, 141, 44);
+}
+@media screen and (max-width:600px) {
+    .grid {
+        display: grid;
+    }
+    .grid1x3 {
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+    .reset{
+        padding: 0.35rem 0.75rem;
+    }
 }
 
 .main {

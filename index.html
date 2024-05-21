@@ -44,10 +44,11 @@
         <hr>
             <article id="menu" class="main__artical menu">
                 <h2 class="menu__h2">Our Menu</h2>
-                <div class="grid grid1x2">
+                <section class="grid grid1x3">
               <p class="Price" >your price:</p> 
-              <div class="yourprice">0</div>
-                </div>
+              <div class="yourprice">0$</div>
+              <button class="reset" onclick="reset();">Reset</button>
+                </section>
               <br>
                 <table class="menu__container">
                     <caption class="offscreen">Our Tacos</caption>
@@ -92,7 +93,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td class="menu__item menu__ch" colspan="3">
+                            <td class="menu__item menu__ch hover" colspan="3" onclick="yourprice1s();">
                                 Chips &amp; Salsa $2
                             </td>
                         </tr>

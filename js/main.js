@@ -7,6 +7,10 @@ function mood () {
     document.getElementById('darkmood').classList.toggle('bgcolor');
 };
 let price = 0;
+function reset(){
+    price=0;
+    document.querySelector('.yourprice').innerHTML = `${price}$`;
+}
 
 function  yourprice1() {
    const g = document.querySelector('.yourprice');
