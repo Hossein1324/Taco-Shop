@@ -42,6 +42,11 @@ input, button, textarea {
     --link-hover: hsla(0, 0%, 0%, 0.6);
     --nav-bgcolor: #fff;
     --button-color:#fff;
+    --hover-bgcolor:rgb(51, 178,51);
+    --hover-color:white;
+    --button-bgcolor: rgb(51, 178,51);
+    --button-color: whitesmoke;
+    --reset-hover:rgb(48, 166, 48);
 
     /* borders */
     --borders: 1px solid var(--border);
@@ -53,7 +58,8 @@ input, button, textarea {
     /* standard margin */
     --margin: clamp(1em, 2.5vh, 1.5em) 0;
 }
-@media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme:dark) {
     :root {
         --bgcolor-fade: gray;
         --bgcolor: #000;
@@ -68,8 +74,14 @@ input, button, textarea {
         --link-hover: orange;
         --nav-bgcolor: rgb(20, 20, 20);
         --button-color:#333;
+        --hover-bgcolor:rgb(207, 204, 204);
+    --hover-color:#333;
+    --button-bgcolor: whitesmoke;
+    --button-color: #333;
+    --reset-hover:rgb(217, 217, 217);
+    };
+    
     }
-}
 
 /* utility classes */
 .offscreen{
@@ -221,25 +233,30 @@ a:active{
     color: var(--hilight-color);
 }
 .reset{
-    background-color: var(--hilight-color);
-    color: whitesmoke;
-    padding: 0.8rem 1rem;
+    background-color: var(--button-bgcolor);
+    color: var(--button-color);
+    padding: 1rem 1.5rem;
     border: none;
     border-radius: 40px;
     cursor: pointer;
 }
 .reset:hover {
-    background-color: rgb(44, 141, 44);
+    background-color:var(--reset-hover) ;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
     .grid {
-        display: grid;
+        display: flex;
     }
-    .grid1x3 {
-        grid-template-columns: repeat(3, 0.5fr);
-    }
+    
+    
     .reset{
-        padding: 0.35rem 0.75rem;
+        padding: 0.8rem 1rem;
+        margin-left: 25px;
+    }
+
+    .yourprice{
+        margin-left: 15px;
+        margin-top: 3px;
     }
 }
 
@@ -350,8 +367,8 @@ thead, tbody, tfoot, tr {
     
 }
 .hover:hover {
-    background-color: var(--hilight-color);
-    color: whitesmoke;
+    background-color: var(--hover-bgcolor);
+    color: var(--hover-color);
     transition: background-color 0.15s ;
 }
 

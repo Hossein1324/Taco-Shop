@@ -27,7 +27,7 @@ function  yourprice2() {
 
  function  yourprice3() {
     const g = document.querySelector('.yourprice');
-    price = price+3.25;
+    price = price+3.50;
      g.innerHTML = `${price} $`
  }
 
