@@ -6,4 +6,4 @@ in this projact information such as : prices, opening and closing time, addres,.
 
 if you want to see the output of the projact, click on the link below!.
 
-[link of the projact](https://taco-projact.netlify.app).
+[Link of the project](https://taco-shopp.netlify.app).
